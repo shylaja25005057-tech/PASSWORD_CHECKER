@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "advanced-password-strength-checker"
+version = "3.0.0"
+description = "Advanced Password Strength Checker using Python"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+
+[project.scripts]
+password-check = "password_pkg.cli:main"
+
+[tool.setuptools]
+packages = ["password_pkg"]
